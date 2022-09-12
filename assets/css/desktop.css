@@ -22,6 +22,9 @@ html{
   background-color: #14213d;
   text-align: center;
 }
+.contenedor-titulo{
+  height: 5rem;
+}
 .titulo{
   color: #e5e5e5;
   font-weight: bolder;
@@ -61,17 +64,30 @@ a{
   flex-direction: column;
   gap: 32px;
   text-align: center;
-
+  background-color:#e5e5e5;
 }
 .card-img-top{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.card-footer-text{
+  border: none;
+  border-radius: 20px;
+  color: #e5e5e5;
+  background-color: #fca311;
+  font-weight: bolder;
+  padding: 12px 24px;
+}
+/* Footer */
 .footer{
   grid-area: footer;
   background-color: black;
+  display: flex;
+  align-items: center;
   color: #e5e5e5;
   font-weight: bold;
-  text-align: center;
+  font-size: 2rem;
+  justify-content: center;
+  height: 5rem;
 }
