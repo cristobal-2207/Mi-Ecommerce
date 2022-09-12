@@ -1,0 +1,62 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+.contenedor-principal{
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+/* Título Principal */
+.hero{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3.2rem;
+  background-color: #14213d;
+}
+.contenedor-titulo{
+  place-self: center;
+}
+.titulo{
+  color: #e5e5e5;
+  font-weight: bolder;
+}
+/* Aside */
+.nav{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.2rem;
+  background-color: #fca311;
+}
+.nav-list{
+  align-self: center;
+  padding-left: 0.4rem;
+}
+a{
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+}
+.categoria{
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+/* Main */
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 28rem);
+  background-color: #e5e5e5;
+}
+.card-h-100{
+  place-self: center;
+}
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

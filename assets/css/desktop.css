@@ -1,0 +1,77 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+/* Contenedor Principla */
+.contenedor-principal{
+  display: grid;
+  grid-template-areas: 
+  "hero    hero"
+  "nav     main"
+  "footer  footer";
+  grid-template-columns: 15vw 1fr;
+}
+/* Título Principal */
+.hero{
+  grid-area: hero;
+  background-color: #14213d;
+  text-align: center;
+}
+.titulo{
+  color: #e5e5e5;
+  font-weight: bolder;
+}
+/* Aside */
+.nav{
+  grid-area: nav;
+  background-color: #fca311;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.nav ul li{
+  margin-bottom: 20px;
+  
+}
+a{
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+}
+.categoria{
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+/* Main */
+.main{
+  grid-area: main;
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 8px;
+}
+.card-h-100{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+
+}
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer{
+  grid-area: footer;
+  background-color: black;
+  color: #e5e5e5;
+  font-weight: bold;
+  text-align: center;
+}
